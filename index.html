@@ -11,10 +11,31 @@
 
   <div id="game-container"></div>
 
- 
   <script src="jquery-3.0.0.min.js"></script>
   <script src="jcanvas.min.js"></script>
-
   <script src="jquery.bart.js"></script>
+
+  <script>
+    $(document).ready(function () {
+      
+ $("#game-container").bart({
+  b: 5,
+  o: {
+    popprob: 40,
+    earnings: 0.1,
+    color: "#2196f3",
+    increment: 0.05
+  },
+  s: {
+    showpopprob: true,    
+    showpumpsused: false, 
+    showcurrentearned: true,
+    showpumpcount: true,
+    showtotalearned: true
+  }
+});
+
+    });
+  </script>
 </body>
 </html>
